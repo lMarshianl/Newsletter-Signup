@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var https = require("https");
 var app = express();
 
-app.use(express.static("Newsletter-Signup/public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
